@@ -1,45 +1,96 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import {
+  DiFirebase,
+  DiReact,
+  DiJsBadge,
+  DiCss3,
+  DiHtml5,
+  DiGit,
+  DiBootstrap,
+} from 'react-icons/di';
+import {
+  SiNextDotJs,
+  SiStyledComponents,
+  SiRedux,
+  SiFirebase,
+  SiTailwindcss,
+} from 'react-icons/si';
+
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
 } from '../../styles/GlobalComponents';
-import {
-  List,
-  ListContainer,
-  ListItem,
-  ListParagraph,
-  ListTitle,
-} from './TechnologiesStyles';
+import { List, ListContainer, ListItem, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () => (
   <Section id='tech'>
     <SectionDivider />
     <br />
     <SectionTitle>Technologies</SectionTitle>
-    <SectionText>lorem ipsum dolor sit amet, consectetur</SectionText>
     <List>
       <ListItem>
         <DiReact size='3rem' />
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>lorem ipsum dolor iwqei lorem</ListParagraph>
+          <ListTitle>React js</ListTitle>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiFirebase size='3rem' />
+        <SiNextDotJs size='3rem' />
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>lorem ipsum dolor iwqei lorem</ListParagraph>
+          <ListTitle>Next js</ListTitle>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiFirebase size='3rem' />
+        <DiJsBadge size='3rem' />
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>lorem ipsum dolor iwqei lorem</ListParagraph>
+          <ListTitle>Javascript</ListTitle>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <span>
+          <DiHtml5 size='3rem' />
+          <DiCss3 size='3rem' />
+        </span>
+        <ListContainer>
+          <ListTitle>Html & CSS3</ListTitle>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <SiStyledComponents size='3rem' />
+        <ListContainer>
+          <ListTitle>Styled components</ListTitle>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <SiRedux size='3rem' />
+        <ListContainer>
+          <ListTitle>Redux</ListTitle>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <SiTailwindcss size='3rem' />
+        <ListContainer>
+          <ListTitle>Tailwind</ListTitle>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <DiBootstrap size='3rem' />
+        <ListContainer>
+          <ListTitle>Bootstrap</ListTitle>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <DiGit size='3rem' />
+        <ListContainer>
+          <ListTitle>Git - github</ListTitle>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <SiFirebase size='3rem' />
+        <ListContainer>
+          <ListTitle>Firebase</ListTitle>
         </ListContainer>
       </ListItem>
     </List>

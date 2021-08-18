@@ -11,6 +11,7 @@ import {
   NavLink,
   SocialIcons,
   Span,
+  Slider,
 } from './HeaderStyles';
 
 const Header = () => (

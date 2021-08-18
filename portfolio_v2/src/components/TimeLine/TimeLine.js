@@ -67,7 +67,8 @@ const Timeline = () => {
     <Section id='about'>
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        lorem ipsum dolor sit am lorem ipsum dolor lorem ipsum dolor
+        Due to my young age I don't have many work work experiences but I am
+        always eager to new challenges.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

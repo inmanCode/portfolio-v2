@@ -20,6 +20,7 @@ export const Container = styled.div`
 export const Span = styled.span`
   font-size: 2rem;
 `;
+
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
@@ -54,11 +55,26 @@ export const NavLink = styled.a`
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
+  position: relative;
   &:hover {
     color: #fff;
     opacity: 1;
     cursor: pointer;
   }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    top: 95%;
+    background-color: white;
+    transition: right 1s ease;
+  }
+  &:hover :before {
+    right: 0;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
   }

@@ -5,24 +5,23 @@ import {
   SectionText,
   SectionTitle,
 } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
-        welcome To <br />
+        Welcome To <br />
         My Personal Portfolio
+        <br />
+        My name is Aymane.
       </SectionTitle>
-      <SectionText>lorem ipsum dolor sit amet, consectetur</SectionText>
-      <Button
-        onClick={() =>
-          (window.location = 'https://www.youtube.com/watch?v=OPaLnMw2i_0')
-        }
-      >
-        Learn More
-      </Button>
+      <SectionText>
+        I am a front-end developer, living in Italy, I enjoy building beautiful
+        & functional websites, learning and looking for challenges everyday.
+        <br />
+        <q>To know is to know that you know nothing.</q> - Socrates -
+      </SectionText>
     </LeftSection>
   </Section>
 );

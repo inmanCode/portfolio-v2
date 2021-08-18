@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import {
@@ -20,12 +20,18 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
-          <LinkItem href='tel:314-343-3432'>314-343-3432</LinkItem>
+          <LinkItem href='tel:+39-327-1870686'>+39-327-1870686</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href='mailto:apollyon568@gmail.com'>
-            apollyon568@gmail.com
+          <LinkItem href='mailto:contact@aymaneabssi.com'>
+            contact@aymaneabssi.com
+          </LinkItem>
+        </LinkColumn>
+        <LinkColumn>
+          <LinkTitle>Download CV</LinkTitle>
+          <LinkItem href='./aymane_abssi_-_ (9).pdf' download>
+            CV
           </LinkItem>
         </LinkColumn>
       </LinkList>
@@ -34,14 +40,14 @@ const Footer = () => {
           <Slogan>Available</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href='https://google.com'>
+          <SocialIcons href='https://github.com/inmanCode' target='_blank'>
             <AiFillGithub size='3rem' />
           </SocialIcons>
-          <SocialIcons href='https://google.com'>
+          <SocialIcons
+            href='https://www.linkedin.com/in/aymane-abssi-2384a0205/'
+            target='_blank'
+          >
             <AiFillLinkedin size='3rem' />
-          </SocialIcons>
-          <SocialIcons href='https://google.com'>
-            <AiFillInstagram size='3rem' />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
